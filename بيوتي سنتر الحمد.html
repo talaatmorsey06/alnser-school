@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>بيوتي سنتر الحمد</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf4f2;--surface:#fff;--ink:#2e1a2c;--muted:#6d5a6b;--plum:#4a2447;--rose:#e9c7cc;--gold:#a87a2c;--line:#ecd9d9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root:not([data-theme="light"]){}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1020;--surface:#2a1a2d;--ink:#f6e9ec;--muted:#c4aebf;--plum:#e9c7cc;--rose:#4a2447;--gold:#d9b05f;--line:#412a44}}
+:root[data-theme="dark"]{--bg:#1d1020;--surface:#2a1a2d;--ink:#f6e9ec;--muted:#c4aebf;--plum:#e9c7cc;--rose:#4a2447;--gold:#d9b05f;--line:#412a44}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 Tajawal,Tahoma,sans-serif}
+h1,h2,h3{font-family:"Reem Kufi",Tajawal,Tahoma,sans-serif;color:var(--plum);margin:0;line-height:1.3}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 5vw}
+nav b{font:700 22px "Reem Kufi",Tajawal,sans-serif;color:var(--plum)}
+nav div{display:flex;gap:18px;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover,nav a:focus-visible{color:var(--gold)}
+.hero{padding:9vh 5vw 8vh;display:grid;gap:24px;background:linear-gradient(160deg,var(--rose),var(--bg) 70%)}
+.hero h1{font-size:clamp(40px,8vw,84px);max-width:14ch}
+.hero p{max-width:46ch;color:var(--muted);font-size:19px;margin:0}
+.btn{display:inline-block;border:0;cursor:pointer;background:var(--plum);color:var(--bg);font:700 17px Tajawal,sans-serif;padding:12px 28px;border-radius:999px;text-decoration:none;width:fit-content}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,nav a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+section{padding:7vh 5vw}
+section>h2{font-size:clamp(28px,4vw,40px);margin-bottom:8px}
+section>p.sub{color:var(--muted);margin:0 0 28px;max-width:55ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.card.s{border-right:4px solid var(--gold)}
+form{display:grid;gap:14px;max-width:560px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+label{display:grid;gap:4px;font-weight:500;font-size:15px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{font-size:14px;color:var(--muted);margin:0}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+footer{padding:28px 5vw;color:var(--muted);text-align:center;font-size:14px}
+@media(max-width:520px){.two{grid-template-columns:1fr}nav b{font-size:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+ <b>بيوتي سنتر الحمد</b>
+ <div><a href="#services">الخدمات</a><a href="#booking">احجزي موعدك</a><a href="#branches">الفروع</a><a href="#feedback">الشكاوى والمقترحات</a><a href="#contact">اتصل بنا</a></div>
+</nav>
+
+<header class="hero">
+ <h1>جمالك يبدأ من عندنا</h1>
+ <p>عناية بالشعر والبشرة والأظافر والمكياج في أجواء مريحة، على أيدي مختصات يهتممن بأدق التفاصيل.</p>
+ <a class="btn" href="#booking">احجزي موعدك</a>
+</header>
+
+<section id="services">
+ <h2>خدماتنا</h2>
+ <p class="sub">اختاري الخدمة وسنؤكد معك الموعد والسعر عند الحجز.</p>
+ <div class="grid">
+  <div class="card s"><h3>الشعر</h3><p>قص، صبغة، تصفيف، وجلسات علاج وتغذية.</p></div>
+  <div class="card s"><h3>البشرة</h3><p>تنظيف بشرة، ماسكات، وجلسات ترطيب ونضارة.</p></div>
+  <div class="card s"><h3>المكياج</h3><p>مكياج سهرات ومناسبات، وتجهيز العروس.</p></div>
+  <div class="card s"><h3>اليدان والقدمان</h3><p>مانيكير وباديكير وتلميع وتركيب أظافر.</p></div>
+  <div class="card s"><h3>إزالة الشعر</h3><p>خدمات إزالة شعر بأدوات معقمة ونظافة تامة.</p></div>
+  <div class="card s"><h3>العناية بالجسم</h3><p>مساج وسكراب وجلسات استرخاء.</p></div>
+  <div class="card s"><h3>التريتمنت (فرد الشعر)</h3><p>جلسات تريتمنت لفرد الشعر.</p></div>
+  <div class="card s"><h3>الترميم</h3><p>ترميم الشعر وإعادة الحيوية له.</p></div>
+  <div class="card s"><h3>الصبغات</h3><p>صبغات بألوان متعددة.</p></div>
+  <div class="card s"><h3>الحمام المغربي والتكبيس</h3><p>جلسات حمام مغربي وتكبيس.</p></div>
+  <div class="card s"><h3>الجاكوزي وماسكات الجسم</h3><p>جاكوزي وماسكات متعددة للجسم.</p></div>
+  <div class="card s"><h3>الأشيز (الرموش)</h3><p>خدمات الرموش.</p></div>
+  <div class="card s"><h3>السويت</h3><p>اسألينا عن تفاصيل الخدمة عند الحجز.</p></div>
+  <div class="card s"><h3>تجهيزات العرائس</h3><p>تجهيز كامل للعروس.</p></div>
+ </div>
+</section>
+
+<section id="booking" class="alt">
+ <h2>احجزي موعدك</h2>
+ <p class="sub">املئي البيانات وسيُفتح واتساب برسالة جاهزة لتأكيد الحجز.</p>
+ <form id="bookForm">
+  <label>الاسم<input name="name" required autocomplete="name"></label>
+  <label>رقم الهاتف<input name="phone" type="tel" required autocomplete="tel" inputmode="tel"></label>
+  <label>الخدمة
+   <select name="service" required><option value="">اختاري الخدمة</option><option>الشعر</option><option>البشرة</option><option>المكياج</option><option>اليدان والقدمان</option><option>إزالة الشعر</option><option>العناية بالجسم</option><option>التريتمنت (فرد الشعر)</option><option>الترميم</option><option>الصبغات</option><option>الحمام المغربي والتكبيس</option><option>الجاكوزي وماسكات الجسم</option><option>الأشيز (الرموش)</option><option>السويت</option><option>تجهيزات العرائس</option></select>
+  </label>
+  <label>الفرع<select name="branch" class="branchSel" required><option value="">اختاري الفرع</option></select></label>
+  <div class="two">
+   <label>التاريخ<input name="date" type="date" required></label>
+   <label>الوقت<input name="time" type="time" required></label>
+  </div>
+  <button class="btn" type="submit">إرسال طلب الحجز</button>
+ </form>
+</section>
+
+<section id="branches">
+ <h2>فروعنا</h2>
+ <p class="sub">نحن قريبات منك.</p>
+ <div class="grid" id="branchList"></div>
+</section>
+
+<section id="feedback" class="alt">
+ <h2>الشكاوى والمقترحات</h2>
+ <p class="sub">رأيك يهمنا ويساعدنا على تحسين الخدمة.</p>
+ <form id="fbForm">
+  <label>النوع<select name="type"><option>شكوى</option><option>مقترح</option></select></label>
+  <label>الاسم<input name="name" required></label>
+  <label>رقم الهاتف<input name="phone" type="tel" inputmode="tel"></label>
+  <label>رسالتك<textarea name="msg" rows="4" required></textarea></label>
+  <button class="btn" type="submit">إرسال</button>
+ </form>
+</section>
+
+<section id="contact">
+ <h2>اتصل بنا</h2>
+ <p class="sub">نسعد بتواصلك في أي وقت.</p>
+ <div class="grid">
+  <div class="card"><h3>الهاتف</h3><p id="cPhone"></p></div>
+  <div class="card"><h3>واتساب</h3><p><a id="cWa" href="#">راسلينا الآن</a></p></div>
+  <div class="card"><h3>ساعات العمل</h3><p id="cHours"></p></div>
+ </div>
+</section>
+
+<footer>© بيوتي سنتر الحمد. جميع الحقوق محفوظة.</footer>
+
+<script>
+// عدّلي هذه البيانات: رقم واتساب بالصيغة الدولية بدون + أو 00، والفروع وساعات العمل
+const CFG={
+ wa:"201148913153",
+ phones:["01148913153","01114889374"],
+ hours:"يوميًا من 10 صباحًا إلى 10 مساءً",
+ branches:[
+  {n:"مدينة نصر",a:"أضيفي العنوان هنا"},
+  {n:"المهندسين",a:"أضيفي العنوان هنا"},
+  {n:"الهرم",a:"أضيفي العنوان هنا"},
+  {n:"الهضبة",a:"أضيفي العنوان هنا"}
+ ]
+};
+const $=s=>document.querySelector(s);
+$("#cPhone").innerHTML=CFG.phones.map(p=>'<a href="tel:'+p+'" dir="ltr">'+p+'</a>').join('<br>');
+$("#cHours").textContent=CFG.hours;
+$("#cWa").href="https://wa.me/"+CFG.wa;
+$("#branchList").innerHTML=CFG.branches.map(b=>'<div class="card"><h3>'+b.n+'</h3><p>'+b.a+'</p></div>').join("");
+document.querySelector(".branchSel").innerHTML='<option value="">اختاري الفرع</option>'+CFG.branches.map(b=>'<option>'+b.n+'</option>').join("");
+function send(text){window.open("https://wa.me/"+CFG.wa+"?text="+encodeURIComponent(text),"_blank")}
+$("#bookForm").addEventListener("submit",e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+ send("طلب حجز\nالاسم: "+f.name+"\nالهاتف: "+f.phone+"\nالخدمة: "+f.service+"\nالفرع: "+f.branch+"\nالتاريخ: "+f.date+"\nالوقت: "+f.time)});
+$("#fbForm").addEventListener("submit",e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+ send(f.type+"\nالاسم: "+f.name+"\nالهاتف: "+(f.phone||"-")+"\n"+f.msg)});
+</script>
+</body>
+</html>
